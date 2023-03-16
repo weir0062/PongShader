@@ -330,7 +330,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BallPos: {x: 0, y: 0, z: 0}
   PaddlePos: {x: 0, y: 0, z: 0}
-  DefaultPaddleY: -16.9
   audioSource: {fileID: 1804557670}
   soundsList:
   - {fileID: 8300000, guid: 9cfe954e879d52f4db4c1ea62632c799, type: 3}

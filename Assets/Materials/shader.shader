@@ -5,6 +5,7 @@ Shader "Custom/shader"
     {
         _Color ("Color", Color) = (1,1,1,1)
         _NewColor ("NewColor", Color) = (0.69, 0.69, 0.69, 0.69)
+        _ThirdColor ("NewColor", Color) = (0.69, 0.69, 0.69, 0.69)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Glossiness("Smoothness", Range(0,1)) = 0.5
         _Metallic("Metallic", Range(0,1)) = 0.0
@@ -39,6 +40,7 @@ Shader "Custom/shader"
         half _Metallic;
         fixed4 _Color;
         fixed4 _NewColor;
+        fixed4 _ThirdColor;
         float3 _Position;
         float _DotRadius;
 
@@ -77,7 +79,7 @@ Shader "Custom/shader"
               p.y < _RectCentre.y + _RectHeight / 2 &&
               p.y > _RectCentre.y - _RectHeight / 2 )
              {
-                 o.Albedo = _NewColor;
+                 o.Albedo = _ThirdColor;
              }
         
 
